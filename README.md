@@ -3,3 +3,6 @@ Description: Comprehensive e-commerce platform for a computer shop selling elect
 Features: Chat system, payment integration, review system, product filtering, search functionality, and secure authentication.
 Technologies: PHP, JavaScript, HTML, Bootstrap, MySQL.
 Highlights: Built entirely from scratch, including real-time communication and robust database management.
+
+
+DATABASE is in etech DB file

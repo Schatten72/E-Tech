@@ -1,0 +1,635 @@
+:root {
+    --accentColor: #ed0d26;
+    --accentHover: #7c0b16;
+    --accentBg: #ed0d0d14;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand-Regular.otf");
+}
+
+@font-face {
+    font-family: "Honey Script";
+    src: url("fonts/HoneyScript-Light.ttf");
+}
+
+* {
+    font-family: Lato;
+}
+
+.logo {
+    height: 100px;
+    background-image: url("resources/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.title1 {
+    font-family: "Honey Script";
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.title2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.background {
+    background-image: url("resources/background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-background {
+    background-image: url("resources/background-body.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.label1 {
+    font-size: 16px;
+}
+
+.label2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.carticon {
+    height: 30px;
+    background-image: url("resources/shopping-cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.hrbreak1 {
+    border-style: solid;
+    border-color: #cccccc;
+    /*border-width: 5px;*/
+}
+
+.logoimg {
+    height: 80px;
+    background-image: url("resources/etech_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.searchbtn {
+    height: 40px;
+    width: 60px;
+    margin-top: -10px;
+    padding: 0;
+    background-color: #ed0d26;
+    border: none;
+}
+
+.searchbtn:hover {
+    background-color: #a10b1b;
+}
+
+.link1 {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.posterimg1 {
+    height: auto;
+    width: 100vw;
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    object-fit: cover;
+}
+
+.postercaption {
+    margin-bottom: 220px;
+}
+
+.postertitle {
+    font-size: 55px;
+    color: gray;
+}
+
+.postertext {
+    font-size: 30px;
+    color: grey;
+}
+
+.postercaption1 {
+    margin-bottom: 70px;
+    margin-right: 220px;
+}
+
+.link2 {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.link2:hover {
+    text-decoration: underline;
+}
+
+.link3 {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.link3:hover {
+    text-decoration: underline;
+}
+
+.cardTopImg {
+    height: 25vh;
+}
+
+.lbl1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pm1 {
+    height: 75px;
+    background-image: url("resources/payment_method_images/paypal_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pm2 {
+    height: 75px;
+    background-image: url("resources/payment_method_images/visa_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pm3 {
+    height: 75px;
+    background-image: url("resources/payment_method_images/mastercard_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pm4 {
+    height: 75px;
+    background-image: url("resources/payment_method_images/american_express_img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.productimg {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: blue;
+    border-style: solid;
+}
+
+
+/*//  //*/
+
+
+/* paginatin */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+/* paginatin */
+
+
+/*////////////////////////////////////*/
+
+.searchbtn1 {
+    width: 100%;
+}
+
+.singleproduct {
+    padding-top: 40px;
+    padding-bottom: 145px;
+    background-color: #4b0d0d;
+    padding: 20px;
+}
+
+.product_qty {
+    width: 320px;
+    height: 50px;
+    padding-left: 8px;
+    padding-bottom: 15px;
+    margin-right: 22px;
+    margin-bottom: 11px;
+}
+
+.qty-buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px #e5e5e5;
+}
+
+.qty-inc,
+.qty-dec {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.qty-inc {
+    padding-bottom: 2px;
+    justify-content: flex-end;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.qty-dec {
+    padding-top: 2px;
+    justify-content: flex-end;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ///////////////////emptyview///// */
+
+.emptyview {
+    height: 280px;
+    background-image: url("resources/bheart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* /////////////emtycart//////// */
+
+.emptycart {
+    height: 400px;
+    background-image: url("resources/emptycart.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* //////////// */
+
+.cardqtytxt {
+    width: 80px;
+    height: 30px;
+    outline: none;
+}
+
+
+/* ////////////////// Invoiceheaderimg  /////////////// */
+
+.invoiceheaderimg {
+    height: 80px;
+    background-image: url("resources/etech_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* ///////////////////// first place////////////////// */
+
+.firstplace {
+    height: 90px;
+    background-image: url("resources/firstplace.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.firstplaceprofilepic {
+    height: 250px;
+    background-image: url("resources/demoProfileImg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+/* addnewimg */
+
+.addnewimg {
+    height: 50px;
+    background-image: url("resources/addnew.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 50%;
+}
+
+
+/**************************************** Updated classes by SK *****************************************/
+
+.rm-btn {
+    font-family: lato;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: var(--accentColor);
+}
+
+.rm-btn:hover {
+    background-color: unset;
+    color: var(--accentHover);
+}
+
+.rm-header-menu {
+    background-color: var(--accentColor);
+    color: #fff;
+}
+
+.rm-header-menu span:hover {
+    color: var(--accentHover);
+}
+
+.rm-header-menu a {
+    color: #cccccc;
+}
+
+.rm-header-menu a:hover {
+    color: var(--accentHover);
+}
+
+.carousel-inner {
+    right: 50%;
+    left: 50%;
+    margin-right: -50vw;
+    margin-left: -50vw;
+    width: 100vw;
+    height: 50vh;
+}
+
+.btn-outline-primary {
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+    max-width: fit-content;
+}
+
+.btn-outline-primary:hover {
+    border-color: var(--accentColor);
+    background-color: var(--accentColor);
+}
+
+.btn-outline-primary:focus {
+    border: unset;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: unset;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #cccccc70;
+}
+
+
+/*Single Product styles*/
+
+.sgl-pd {
+    padding: 2em 1em 2em 1em;
+    text-align: center;
+}
+
+.sgl-pd:hover {
+    cursor: pointer;
+    border: 1px solid var(--accentColor);
+}
+
+.sgl-pd .btn-danger {
+    background-color: var(--accentColor);
+}
+
+.sgl-pd .btn-success {
+    background-color: green;
+}
+
+.sgl-pd .badge .bg-info {
+    background-color: var(--accentColor);
+}
+
+.sgl-pd .rm-love {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 24px;
+    background-color: unset;
+    color: #cccccc;
+    border: 0;
+}
+
+.sgl-pd .rm-love:hover {
+    cursor: pointer;
+    color: var(--accentColor);
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #f3f3f3;
+    color: #878787;
+}
+
+footer .rm-foot-col .rm-foot-title {
+    color: var(--accentColor);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+footer .rm-foot-col a {
+    text-decoration: none;
+    color: unset;
+    /*font-weight: 100;*/
+    font-size: 16px;
+}
+
+footer .rm-foot-col a:hover {
+    cursor: pointer;
+    color: var(--accentColor);
+}
+
+footer .rm-terms {
+    text-decoration: none;
+    color: var(--accentColor);
+    padding: 2em;
+    font-weight: bold;
+}
+
+
+/* sellerproductreview */
+
+.rm-bg-accent {
+    background-color: var(--accentColor);
+}
+
+.rounded-circle {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+}
+
+
+/* 
+/////card hover/// */
+
+.card1 {
+    background-color: white;
+}
+
+.card1:hover {
+    transform: scale(1.02);
+    transition-duration: 500ms;
+    background: transparent;
+}
+
+
+/* ////////////////// Message  /////////////// */
+
+.chatbox::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.message-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.message-box {
+    height: 780px;
+    overflow-y: scroll;
+    overflow: none;
+}
+
+.chatbox {
+    margin-top: 40px;
+    height: 680px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.chatbox-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+/* ///////////////// relateditems///// */
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+
+/********* Admin Panel *********/
+
+.app-theme-white .app-footer .app-footer__inner,
+.app-theme-white .app-header {
+    /*background-color: var(--accentColor) !important;*/
+}
+
+.bg-card-1 {
+    background-image: linear-gradient(to bottom, #36c0ef 0%, #158cb5 100%) !important
+}
+
+.bg-card-2 {
+    background-image: linear-gradient(to bottom, #f7b924 0%, #cb981d 100%) !important
+}
+
+.bg-card-3 {
+    background-image: linear-gradient(to bottom, #0ba360 0%, #097e4b 100%) !important
+}
+
+.bg-card-4 {
+    background-image: linear-gradient(to bottom, #4e4376 0%, #352c54 100%) !important
+}
+
+.bg-card-5 {
+    background-image: linear-gradient(to bottom, #d92550 0%, #a91a3c 100%) !important
+}
+
+.bg-card-6 {
+    background-image: linear-gradient(to bottom, #343a40 0%, #1c1f22 100%) !important
+}
+
+.app-sidebar__heading {
+    color: var(--accentColor) !important;
+}
+
+.vertical-nav-menu li a.mm-active {
+    background: var(--accentBg) !important;
+}
+
+.vertical-nav-menu li a:hover {
+    background: var(--accentBg) !important;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background: var(--accentColor) !important;
+}
+
+.app-header__logo .logo-src {
+    background: url(resources/etech_logo.png) !important;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-backdrop {
+    display: none;
+}
